@@ -1,0 +1,243 @@
+.section-3 {
+  /* background-color: black; */
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.container {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  gap: 10px;
+  flex-wrap: wrap; /* wrap buttons on small screens */
+}
+
+.buttons button {
+  flex: 1 1 45%; /* allow buttons to shrink and wrap */
+  padding: 15px 10px;
+  border: none;
+  font-size: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  min-width: 120px;
+  margin: 5px 0;
+}
+
+.buttons button:hover {
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: white;
+}
+
+.buttons button.active {
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: white;
+}
+
+.content {
+  margin: 20px 30px 30px 30px;
+  padding: 10px;
+  /* background: rgb(0, 0, 0); */
+  border: 0px solid;
+  min-height: 100px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.content.hide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 30px;
+  box-sizing: border-box;
+}
+
+.grid a.box {
+  display: block;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid a.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.grid a.box img {
+  width: 100%; /* make image responsive */
+  max-width: 250px; /* max width for bigger screens */
+  height: 250px;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.grid a.box h3 {
+  padding: 10px;
+  font-size: 20px;
+  border-top: black 2px solid;
+}
+
+.grid a.box p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.pagination {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 20px 10px;
+  cursor: pointer;
+  border: 0px;
+  color: rgb(0, 0, 0);
+  background-color: #ccc;
+  box-shadow: red 6px;
+  width: 20%;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: #ccc;
+}
+
+.container-e1 {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.left {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: white;
+}
+
+.right {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: white;
+}
+
+.container-e1 h1 {
+  text-align: center;
+  margin: 10px 30px;
+  border-bottom: #ccc 1px solid;
+  font-size: 30px;
+}
+
+.container-e1 h2 {
+  text-align: left;
+  margin: 10px 30px;
+  font-size: 20px;
+}
+
+.container-e1 h3 {
+  text-align: left;
+  margin: 10px 30px;
+  font-size: 15px;
+}
+
+.container-e1 p {
+  text-align: left;
+  margin: 10px 30px;
+  font-size: 15px;
+}
+
+.container-e1 a {
+  text-decoration: none;
+}
+
+/* ======= RESPONSIVE ======= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .buttons {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .grid {
+    grid-template-columns: 1fr; /* single column on tablets */
+    margin: 20px;
+  }
+  .grid a.box img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container-e1 {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .pagination button {
+    width: 40%;
+    padding: 15px 5px;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .buttons button {
+    flex: 1 1 100%;
+    min-width: unset;
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+  .content {
+    margin: 10px 10px 20px 10px;
+  }
+  .pagination button {
+    width: 80%;
+    padding: 12px 5px;
+    font-size: 14px;
+  }
+}

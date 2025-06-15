@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+<body>
+    <canvas id="space"></canvas>
+
+    <header>
+        <div class="opacity">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="image/logo.jpg" alt="Logo" ></a>
+            </div>
+            <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+  </div>
+    </header>
+    <main class="main">
+        
+        <section class="section1" id="Home">
+            <div class="section1-left">
+                <div class="section1-container">
+                    <h2><b>MONESH R</b></h2>
+                    <p class="typing-line">
+                        I'm&nbsp;
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">a Developer.</b>
+                            <b>a Professional Coder.</b>
+                            <b>a Engineer.</b>
+                            <b>a Ambivert.</b>
+                        </span>
+                    </p>
+                    <div class="inner-box-1">
+                        <a href="https://www.linkedin.com/in/monesh-r-0469061a9/">
+                            <i class="fab fa-linkedin" style="font-size:48px; color:blue;"></i>
+                        </a>
+                        <a href="https://github.com/monesh1999">
+                            <i class="fab fa-github" style="font-size:48px; color:#000000; background-color: #fff; border-radius: 100px;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/monesh_r_2812">
+                            <i class="fab fa-instagram" style="font-size:48px; color:rgb(255, 0, 191);"></i>
+                        </a>
+                        <a href="https://youtube.com/@r-monesh1999?si=u0NF0C70Rbxwd8e1">
+                            <i class="fab fa-youtube" style="font-size:48px; color:red;"></i>
+                        </a>
+                    </div>
+                    <div class="resume">
+                        <a href="file/resume.pdf" download>
+                            <button>Resume</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section1-right">
+                <img src="image/my.png" alt="myimage">
+            </div>
+        </section>
+        <section class="section2">
+            <div class="outer-box" >
+                <div class="inner-box" id="About">
+                    <h1 id="highlight-1">About</h1>
+                    <p>Results-driven software engineer with expertise in Java, Spring Boot, and front-end technologies (HTML, CSS, JavaScript). Skilled in designing and developing secure, scalable web applications and leveraging databases like MySQL. Proficient in implementing and optimizing data structures to solve complex problems efficiently. Committed to continuous learning, collaborative teamwork, and delivering impactful solutions in fast-paced environments.</p>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-3" id="projects">
+         <div class="container">
+         <div class="buttons">
+           <button id="btn-x" onclick="showContent('x')">Projects</button>
+           <button id="btn-y" onclick="showContent('y')">Education & Experience</button>
+           <button id="btn-z" onclick="showContent('z')">Publication</button>
+         </div>
+
+      <!-- PROJECTS (two pages) -->
+      <div class="content" id="content-x">
+        <div class="grid page-1">
+          <a href="https://example.com/1" target="_blank" class="box">
+            <img src="image/tic-tac-toe.jpg" alt="Tic Tac Toe" />
+            <h3>Tic Tac Toe</h3>
+            <p>Tic Tac Toe is a simple and fun two-player game that uses a 3x3 grid. Players take turns marking the squares with either an "X" or an "O". The objective is to be the first to get three of your marks in a row, either across, down, or diagonally. If all nine squares are filled and no player has achieved this, the game ends in a draw.</p>
+          </a>
+          <a href="https://example.com/2" target="_blank" class="box">
+            <img src="image/todo.jpg" alt="Todo List App" />
+            <h3>Todo List App using HTML CSS & JavaScript</h3>
+            <p>The Todo List App is a simple yet functional application designed for managing daily tasks. Built entirely with HTML, CSS, and JavaScript, it provides an intuitive interface where users can add, delete, and mark tasks as completed.</p>
+          </a>
+          <a href="https://github.com/monesh1999/Compare_Two_DNA" target="_blank" class="box">
+            <img src="image/dna.jpg" alt="DNA Sequence Analysis" />
+            <h3>A Digital DNA Sequence Analysis...</h3>
+            <p>This project focuses on DNA sequence analysis using the Smith-Waterman algorithm to identify similarities or matches within genetic data. Developed with Java, Spring Boot, and Spring Security.</p>
+          </a>
+          <a href="https://example.com/4" target="_blank" class="box">
+            <img src="image/rps.jpg" alt="Rock Paper Scissors" />
+            <h3>Rock Paper Scissors Game</h3>
+            <p>The Rock Paper Scissors Game is a web-based implementation of the classic hand game, built with HTML, CSS, and JavaScript. The project features a clean and interactive user interface.</p>
+          </a>
+        </div>
+        <div class="grid page-2" style="display: none;">
+          <a href="https://example.com/5" target="_blank" class="box">
+            <img src="image/up.jpg" alt="Upcoming 5" />
+            <h3>Upcoming</h3>
+            <p>This is box 5 content.</p>
+          </a>
+          <a href="https://example.com/6" target="_blank" class="box">
+            <img src="image/up.jpg" alt="Upcoming 6" />
+            <h3>Upcoming</h3>
+            <p>This is box 6 content.</p>
+          </a>
+          <a href="https://example.com/7" target="_blank" class="box">
+            <img src="image/up.jpg" alt="Upcoming 7" />
+            <h3>Upcoming</h3>
+            <p>This is box 7 content.</p>
+          </a>
+          <a href="https://example.com/8" target="_blank" class="box">
+            <img src="image/up.jpg" alt="Upcoming 8" />
+            <h3>Upcoming</h3>
+            <p>This is box 8 content.</p>
+          </a>
+        </div>
+        <div class="pagination">
+          <button id="prev-btn" onclick="prevPage()" style="display: none;">Prev</button>
+          <button id="next-btn" onclick="nextPage()">Next</button>
+        </div>
+      </div>
+
+      <!-- EDUCATION & EXPERIENCE -->
+      <div class="content" id="content-y" style="display: none;">
+        <div class="container-e1">
+          <div class="left">
+            <h1>Education</h1>
+            <h2>B.Tech - Information Technology</h2>
+            <h3>Dr.MGR Educational and Research Institution</h3>
+            <p style="text-align:right">2017-2021</p>
+            <p>Chennai, TamilNadu</p>
+          </div>
+          <div class="right">
+            <h1>Work Experience</h1>
+            <h2>Research Assistant</h2>
+            <h3>Dr.MGR Educational and Research Institution</h3>
+            <p style="text-align:right">July 2021 - Dec 2021</p>
+            <p>Chennai, TamilNadu</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBLICATION -->
+      <div class="content" id="content-z" style="display: none;">
+        <div class="container-e1">
+          <div class="left">
+            <h1>A Digital DNA Sequence Analysis to Find Matches with Integrated Hospital Management</h1>
+            <a href="https://www.irjmets.com/uploadedfiles/paper/volume3/issue_6_june_2021/13444/1628083525.pdf" target="_blank" style="color: #fff; text-decoration: underline;">
+              <p>Publication Journal: International Research Journal Of Modernization In Engineering Technology And Science</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+        <section class="section-4" id="skill">
+            <h1 >Skills</h1>
+            <div class="container-s">
+                <div class="skills-container">
+                    <h2>Front-End</h2>
+                    <div class="skill">
+                        <span><i class="fab fa-html5" style="color:#e44d26;"></i>HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fab fa-css3-alt" style="color:#264de4;"></i>CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fab fa-js" style="color:#f7df1e;"></i>JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fab fa-bootstrap" style="color:#563d7c;"></i> BootStrap</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h2>back-End</h2>
+                    <div class="skill">
+                        <span ><i class="fab fa-java" style="font-size:48px; color:red;"></i>Java</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><img src="image/spring.png.png" alt="Spring Boot Logo" style="width:24px; vertical-align:middle; margin-right:8px;">Spring-boot</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fab fa-python" style="color:#3776ab;"></i>python</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h2>DataBase</h2>
+                    <div class="skill">
+                        <span><i class="fas fa-database" style="color:#4479A1;"></i>MySql</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fas fa-database" style="color:#223f55;"></i>Sql</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong><br>Thiruvallu, Tamil Nadu, India - 602002</p>
+                <p><strong>Phone:</strong><br>+91 79040 88437</p>
+                <p><strong>Email:</strong><br>rjmonesh@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  </main>
+  <footer style="background: #000000; color: #fff; text-align: center; padding: 20px; margin-top: 20px; border: #ffffff 1px solid; box-shadow: inset black 20px;">&copy; 2025 Monesh R. All rights reserved.
+</footer>
+    <script src="js/script.js"></script>
+    <script src="js/sliding.js"></script>
+    <script src="js/stars.js"></script>
+</body>
+</html>
